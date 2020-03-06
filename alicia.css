@@ -1,117 +1,119 @@
 :root {
-    --main-text-color: #2D2D2D;
+  --main-text-color: #2D2D2D;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--main-text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-text-color);
 }
 
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 #toolbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
 }
 
 #navigationbar {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 32px;
-    margin-right: 48px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  margin-right: 48px;
 }
 
 #toolbar #navigationbar .section {
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin-left: 34px;
-    margin-right: 34px;
-    cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-left: 34px;
+  margin-right: 34px;
+  cursor: pointer;
 }
 
 #decoration-header-1 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 490px;
-    z-index: -1;
-    background-color: #FFDB82;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 490px;
+  z-index: -1;
+  background-color: #FFDB82;
 }
 
 #decoration-header-2 {
-    position: absolute;
-    right: 5%;
-    top: 80px;
-    width: 50%;
-    height: 490px;
-    z-index: -1;
-    border: 1px solid #FFDB82;
+  position: absolute;
+  right: 5%;
+  top: 80px;
+  width: 50%;
+  height: 490px;
+  z-index: -1;
+  border: 1px solid #FFDB82;
 }
 
 #decoration-header-3 {
-    position: absolute;
-    right: 15%;
-    top: 150px;
-    width: 45%;
-    height: 560px;
-    z-index: -1;
-    border: 1px solid #FFDB82;
+  position: absolute;
+  right: 15%;
+  top: 150px;
+  width: 45%;
+  height: 560px;
+  z-index: -1;
+  border: 1px solid #FFDB82;
 }
 
 #header {
-    position: absolute;
-    left: 40%;
-    transform: translate(-40%, 0%);
-    top: 200px;
-    display: flex;
-    flex-direction: row;
+  position: absolute;
+  left: 40%;
+  transform: translate(-40%, 0%);
+  top: 200px;
+  display: flex;
+  flex-direction: row;
 }
 
 #hello-header {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #hello-header #hello-text {
-    font-weight: 600;
-    font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 #hello-header #iam-text {
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 85%;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 85%;
 }
 
 #hello-header #iam-text #alicia-text {
-    font-weight: 900;
-    font-size: 3.2rem;
-    color: #3B8FFF;
+  font-weight: 900;
+  font-size: 3.2rem;
+  color: #3B8FFF;
 }
 
 #hello-header #surname-text {
-    font-weight: 900;
-    font-size: 3.48rem;
-    color: #3B8FFF;
-    line-height: 85%;
-    margin-left: -2px;
+  font-weight: 900;
+  font-size: 3.48rem;
+  color: #3B8FFF;
+  line-height: 85%;
+  margin-left: -2px;
 }
 
 #hello-header .whatiam-text {
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-align: end;
-    margin-top: 10px;
-    line-height: 60%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: end;
+  margin-top: 10px;
+  line-height: 60%;
 }
 
 #myself-001 {
-    margin-left: 12px;
-    width: 420px;
-    box-shadow: 0px 2px 8px #0000002D;
+  margin-left: 12px;
+  width: 420px;
+  box-shadow: 0px 2px 8px #0000002D;
 }
+
+/*# sourceMappingURL=alicia.css.map */
