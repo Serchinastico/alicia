@@ -36,10 +36,16 @@ p {
 }
 
 #toolbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 80px;
+  z-index: 100;
+  transition: all 0.3s, visibility 0.3s;
+}
+#toolbar.solid {
+  background: #ffdb82;
+  transition: all 0.3s, visibility 0.3s;
 }
 #toolbar #navigationbar {
   display: flex;
@@ -52,6 +58,8 @@ p {
   font-size: 1.1rem;
   margin-left: 34px;
   margin-right: 34px;
+  text-decoration: none;
+  color: #2d2d2d;
   cursor: pointer;
 }
 
@@ -214,19 +222,19 @@ p {
   width: 320px;
 }
 
-#more-section {
+#more {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
   text-align: center;
 }
-#more-section .cards {
+#more .cards {
   display: flex;
   flex-direction: row;
   margin-top: 32px;
 }
-#more-section .cards .card {
+#more .cards .card {
   position: relative;
   display: flex;
   text-align: end;
@@ -235,14 +243,14 @@ p {
   margin-left: 16px;
   margin-right: 16px;
 }
-#more-section .cards .card .card-image {
+#more .cards .card .card-image {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
 }
-#more-section .cards .card .card-overlay {
+#more .cards .card .card-overlay {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -254,22 +262,22 @@ p {
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
 }
-#more-section .cards .card .card-overlay:hover {
+#more .cards .card .card-overlay:hover {
   opacity: 0.8;
   transition: opacity 0.3s, visibility 0.3s;
 }
-#more-section .cards .card .card-title {
+#more .cards .card .card-title {
   margin-right: 16px;
   z-index: 1;
 }
-#more-section .cards .card .card-body {
+#more .cards .card .card-body {
   font-weight: 200;
   font-size: 0.9rem;
   margin: 0 16px 16px 16px;
   z-index: 1;
 }
 
-#footer {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,16 +287,16 @@ p {
   width: 100%;
   background: #1c4173;
 }
-#footer #lets-talk {
+#contact #lets-talk {
   color: #ffffff;
 }
-#footer #networks {
+#contact #networks {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 24px;
 }
-#footer #networks .network-logo {
+#contact #networks .network-logo {
   width: auto;
   height: 48px;
   margin-left: 16px;
@@ -296,10 +304,10 @@ p {
   object-fit: cover;
 }
 
-#experience-section .section-item-header {
+#experience .section-item-header {
   text-align: end;
 }
-#experience-section .section-item-description {
+#experience .section-item-description {
   text-align: start;
 }
 
@@ -307,10 +315,10 @@ p {
   margin-left: 80px;
 }
 
-#studies-section .section-item-header {
+#studies .section-item-header {
   text-align: start;
 }
-#studies-section .section-item-description {
+#studies .section-item-description {
   text-align: end;
 }
 
