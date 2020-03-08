@@ -1,6 +1,27 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 p {
@@ -20,7 +41,7 @@ p {
   margin-top: 32px;
   margin-right: 48px;
 }
-#toolbar #navigationbar .section {
+#toolbar #navigationbar .nav-section {
   font-weight: 600;
   font-size: 1.1rem;
   margin-left: 34px;
@@ -33,6 +54,7 @@ p {
   right: 0;
   top: 0;
   width: 50%;
+  max-width: 575px;
   height: 490px;
   z-index: -1;
   background-color: #ffdb82;
@@ -40,9 +62,9 @@ p {
 
 #decoration-header-2 {
   position: absolute;
-  right: 5%;
+  left: 50%;
   top: 80px;
-  width: 50%;
+  width: 35%;
   height: 490px;
   z-index: -1;
   border: 1px solid #ffdb82;
@@ -50,48 +72,46 @@ p {
 
 #decoration-header-3 {
   position: absolute;
-  right: 15%;
+  left: 45%;
   top: 150px;
-  width: 45%;
+  width: 35%;
   height: 560px;
   z-index: -1;
   border: 1px solid #ffdb82;
 }
 
 #header {
-  position: absolute;
-  left: 40%;
-  transform: translate(-40%, 0%);
-  top: 200px;
+  margin-top: 160px;
+  margin-right: 60px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
-
-#hello-header {
+#header #hello-header {
   margin-top: 40px;
 }
-#hello-header #hello-text {
+#header #hello-header #hello-text {
   font-weight: 600;
   font-size: 1.5rem;
 }
-#hello-header #iam-text {
+#header #hello-header #iam-text {
   font-weight: 600;
   font-size: 3rem;
   line-height: 85%;
 }
-#hello-header #iam-text #alicia-text {
+#header #hello-header #iam-text #alicia-text {
   font-weight: 900;
   font-size: 3.2rem;
   color: #3b8fff;
 }
-#hello-header #surname-text {
+#header #hello-header #surname-text {
   font-weight: 900;
   font-size: 3.48rem;
   color: #3b8fff;
   line-height: 85%;
   margin-left: -2px;
 }
-#hello-header .whatiam-text {
+#header #hello-header .whatiam-text {
   font-weight: 600;
   font-size: 0.9rem;
   text-align: end;
@@ -103,6 +123,117 @@ p {
   margin-left: 12px;
   width: 420px;
   box-shadow: 0px 2px 8px #0000002d;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.section #experience-picture {
+  margin-right: 20px;
+  position: relative;
+  align-self: center;
+}
+.section #experience-picture #experience-picture-decoration-1 {
+  background: #ffdb82;
+  width: 294px;
+  height: 420px;
+  left: -32px;
+  top: 32px;
+  z-index: -1;
+  position: absolute;
+}
+.section #experience-picture #experience-picture-decoration-2 {
+  border: 1px solid #ffdb82;
+  width: 294px;
+  height: 420px;
+  left: 24px;
+  top: 64px;
+  z-index: -1;
+  position: absolute;
+}
+.section #experience-picture #myself-002 {
+  width: 312px;
+  box-shadow: 0px 2px 8px #0000002d;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.experience-item {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.experience-item .experience-item-header {
+  width: 200px;
+  text-align: end;
+}
+.experience-item .experience-item-header .experience-item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.experience-item .experience-item-header .experience-item-dates {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.experience-item .experience-item-description {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  width: 400px;
+}
+
+.section #studies-picture {
+  margin-right: 20px;
+  position: relative;
+  align-self: center;
+}
+.section #studies-picture #myself-003 {
+  width: 320px;
+}
+.section #studies-picture #studies-picture-decoration-1 {
+  background: #ffdb82;
+  width: 294px;
+  height: 320px;
+  left: 80px;
+  top: -48px;
+  z-index: -1;
+  position: absolute;
+}
+.section #studies-picture #studies-picture-decoration-2 {
+  border: 1px solid #ffdb82;
+  width: 294px;
+  height: 320px;
+  left: 24px;
+  top: -24px;
+  z-index: -1;
+  position: absolute;
+}
+.section .studies-item {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.section .studies-item .studies-item-description {
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-align: end;
+  margin-right: 8px;
+  width: 400px;
+}
+.section .studies-item .studies-item-header {
+  width: 200px;
+  text-align: start;
 }
 
 /*# sourceMappingURL=alicia.css.map */
