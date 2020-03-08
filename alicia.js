@@ -32,10 +32,15 @@ $(document).ready(function() {
     });
 
   $(window).scroll(function() {
-    updateToolbarColor();
+    updateToolbar();
   });
-  updateToolbarColor();
+  updateToolbar();
 });
+
+function updateToolbar() {
+  updateToolbarColor();
+  updateSelectedToolbarItem();
+}
 
 function updateToolbarColor() {
   var scroll = $(document).scrollTop();
@@ -44,5 +49,25 @@ function updateToolbarColor() {
     $("#toolbar").addClass("solid");
   } else {
     $("#toolbar").removeClass("solid");
+  }
+}
+
+function updateSelectedToolbarItem() {
+  var scroll = $(document).scrollTop();
+
+  var experienceTop = $("#experience").offset().top;
+  var studiesTop = $("#studies").offset().top;
+  var moreTop = $("#more").offset().top;
+
+  $('a[href*="#"]').removeClass("selected");
+
+  if (scroll < experienceTop - 200) {
+    $('a[href*="#home"]').addClass("selected");
+  } else if (scroll < studiesTop - 200) {
+    $('a[href*="#experience"]').addClass("selected");
+  } else if (scroll < moreTop - 400) {
+    $('a[href*="#studies"]').addClass("selected");
+  } else {
+    $('a[href*="#more"]').addClass("selected");
   }
 }
