@@ -269,6 +269,33 @@ p {
   z-index: 1;
 }
 
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  height: 240px;
+  width: 100%;
+  background: #1c4173;
+}
+#footer #lets-talk {
+  color: #ffffff;
+}
+#footer #networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 24px;
+}
+#footer #networks .network-logo {
+  width: auto;
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
 #experience-section .section-item-header {
   text-align: end;
 }
