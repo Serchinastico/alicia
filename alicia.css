@@ -24,6 +24,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 0;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -206,6 +212,61 @@ p {
 
 #myself-003 {
   width: 320px;
+}
+
+#more-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+}
+#more-section .cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+#more-section .cards .card {
+  position: relative;
+  display: flex;
+  text-align: end;
+  width: 260px;
+  height: 340px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#more-section .cards .card .card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#more-section .cards .card .card-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffdb82;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+#more-section .cards .card .card-overlay:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+#more-section .cards .card .card-title {
+  margin-right: 16px;
+  z-index: 1;
+}
+#more-section .cards .card .card-body {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin: 0 16px 16px 16px;
+  z-index: 1;
 }
 
 #experience-section .section-item-header {

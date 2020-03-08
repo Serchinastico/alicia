@@ -1,0 +1,63 @@
+@import "foundation";
+
+#more-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+
+    .card {
+      position: relative;
+      display: flex;
+      text-align: end;
+      width: 260px;
+      height: 340px;
+      margin-left: 16px;
+      margin-right: 16px;
+
+      .card-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .card-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $color-primary;
+        z-index: 0;
+
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+          transition: opacity 0.3s, visibility 0.3s;
+        }
+      }
+
+      .card-title {
+        margin-right: 16px;
+        z-index: 1;
+      }
+
+      .card-body {
+        @include body;
+        margin: 0 16px 16px 16px;
+        z-index: 1;
+      }
+    }
+  }
+}
