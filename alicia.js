@@ -45,7 +45,7 @@ function updateToolbar() {
 function updateToolbarColor() {
   var scroll = $(document).scrollTop();
 
-  if (scroll > 200) {
+  if (scroll > 400) {
     $("#toolbar").addClass("solid");
   } else {
     $("#toolbar").removeClass("solid");

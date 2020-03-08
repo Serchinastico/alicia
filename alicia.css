@@ -83,7 +83,7 @@ p {
 #header #hello-header #iam-text {
   font-weight: 600;
   font-size: 3rem;
-  line-height: 85%;
+  line-height: 90%;
 }
 #header #hello-header #iam-text #alicia-text {
   font-weight: 900;
@@ -97,11 +97,14 @@ p {
   line-height: 85%;
   margin-left: -2px;
 }
+#header #hello-header #first-whatiam {
+  margin-top: 24px;
+}
 #header #hello-header .whatiam-text {
   font-weight: 600;
   font-size: 0.9rem;
   text-align: end;
-  margin-top: 10px;
+  margin-top: 12px;
   line-height: 60%;
 }
 
@@ -151,8 +154,8 @@ p {
 }
 
 #decoration-header-2 {
-  z-index: -1;
-  border: 1px solid #ffdb82;
+  z-index: -2;
+  border: 2px solid #ffdb82;
   position: absolute;
   left: 50%;
   top: 80px;
@@ -161,8 +164,8 @@ p {
 }
 
 #decoration-header-3 {
-  z-index: -1;
-  border: 1px solid #ffdb82;
+  z-index: -2;
+  border: 2px solid #ffefc8;
   position: absolute;
   left: 45%;
   top: 140px;
@@ -172,7 +175,7 @@ p {
 
 #experience-picture-decoration-1 {
   z-index: -1;
-  background-color: #ffdb82;
+  background-color: #ffc363;
   position: absolute;
   left: -32px;
   top: 32px;
@@ -181,8 +184,8 @@ p {
 }
 
 #experience-picture-decoration-2 {
-  z-index: -1;
-  border: 1px solid #ffdb82;
+  z-index: -2;
+  border: 2px solid #ffc363;
   position: absolute;
   left: 24px;
   top: 64px;
@@ -192,7 +195,7 @@ p {
 
 #studies-picture-decoration-1 {
   z-index: -1;
-  background-color: #ffdb82;
+  background-color: #ffed9c;
   position: absolute;
   left: 80px;
   top: -48px;
@@ -201,8 +204,8 @@ p {
 }
 
 #studies-picture-decoration-2 {
-  z-index: -1;
-  border: 1px solid #ffdb82;
+  z-index: -2;
+  border: 2px solid #ffed9c;
   position: absolute;
   left: 24px;
   top: -24px;

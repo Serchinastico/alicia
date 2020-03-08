@@ -18,7 +18,7 @@
 }
 
 #decoration-header-3 {
-  @include decoration(border, $color-primary);
+  @include decoration(border, $color-sandie-beach);
   @include absolute($left: 45%, $top: 140px);
 
   width: 35%;
@@ -26,7 +26,7 @@
 }
 
 #experience-picture-decoration-1 {
-  @include decoration(fill, $color-primary);
+  @include decoration(fill, $color-koromiko);
   @include absolute($left: -32px, $top: 32px);
 
   width: 294px;
@@ -34,7 +34,7 @@
 }
 
 #experience-picture-decoration-2 {
-  @include decoration(border, $color-primary);
+  @include decoration(border, $color-koromiko);
   @include absolute($left: 24px, $top: 64px);
 
   width: 294px;
@@ -42,7 +42,7 @@
 }
 
 #studies-picture-decoration-1 {
-  @include decoration(fill, $color-primary);
+  @include decoration(fill, $color-visvis);
   @include absolute($left: 80px, $top: -48px);
 
   width: 294px;
@@ -50,7 +50,7 @@
 }
 
 #studies-picture-decoration-2 {
-  @include decoration(border, $color-primary);
+  @include decoration(border, $color-visvis);
   @include absolute($left: 24px, $top: -24px);
 
   width: 294px;

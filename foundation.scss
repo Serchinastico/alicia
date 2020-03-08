@@ -3,6 +3,9 @@ $main-text-color: #2d2d2d;
 $color-primary: #ffdb82;
 $color-accent: #3b8fff;
 $color-dark-accent: #1c4173;
+$color-sandie-beach: #ffefc8;
+$color-koromiko: #ffc363;
+$color-visvis: #ffed9c;
 
 @mixin header1 {
   font-size: 2.5rem;
@@ -30,12 +33,12 @@ $color-dark-accent: #1c4173;
 }
 
 @mixin decoration($type, $color) {
-  z-index: -1;
-
   @if $type == fill {
+    z-index: -1;
     background-color: $color;
   } @else if $type == border {
-    border: 1px solid $color;
+    z-index: -2;
+    border: 2px solid $color;
   } @else {
     @error "Unknown decoration type #{$type}.";
   }
