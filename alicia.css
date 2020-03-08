@@ -49,37 +49,6 @@ p {
   cursor: pointer;
 }
 
-#decoration-header-1 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  max-width: 575px;
-  height: 490px;
-  z-index: -1;
-  background-color: #ffdb82;
-}
-
-#decoration-header-2 {
-  position: absolute;
-  left: 50%;
-  top: 80px;
-  width: 35%;
-  height: 490px;
-  z-index: -1;
-  border: 1px solid #ffdb82;
-}
-
-#decoration-header-3 {
-  position: absolute;
-  left: 45%;
-  top: 150px;
-  width: 35%;
-  height: 560px;
-  z-index: -1;
-  border: 1px solid #ffdb82;
-}
-
 #header {
   margin-top: 160px;
   margin-right: 60px;
@@ -119,12 +88,6 @@ p {
   line-height: 60%;
 }
 
-#myself-001 {
-  margin-left: 12px;
-  width: 420px;
-  box-shadow: 0px 2px 8px #0000002d;
-}
-
 .section {
   display: flex;
   flex-direction: row;
@@ -132,108 +95,135 @@ p {
   width: 100%;
   margin-top: 100px;
 }
-.section #experience-picture {
+.section .picture-area {
   margin-right: 20px;
+  margin-left: 20px;
   position: relative;
   align-self: center;
 }
-.section #experience-picture #experience-picture-decoration-1 {
-  background: #ffdb82;
-  width: 294px;
-  height: 420px;
+.section .section-title {
+  text-align: center;
+  margin-right: 10px;
+}
+.section .section-item {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.section .section-item .section-item-header {
+  width: 200px;
+}
+.section .section-item .section-item-description {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 400px;
+}
+
+#decoration-header-1 {
+  z-index: -1;
+  background-color: #ffdb82;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  max-width: 575px;
+  height: 490px;
+}
+
+#decoration-header-2 {
+  z-index: -1;
+  border: 1px solid #ffdb82;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  width: 35%;
+  height: 490px;
+}
+
+#decoration-header-3 {
+  z-index: -1;
+  border: 1px solid #ffdb82;
+  position: absolute;
+  left: 45%;
+  top: 140px;
+  width: 35%;
+  height: 560px;
+}
+
+#experience-picture-decoration-1 {
+  z-index: -1;
+  background-color: #ffdb82;
+  position: absolute;
   left: -32px;
   top: 32px;
-  z-index: -1;
-  position: absolute;
-}
-.section #experience-picture #experience-picture-decoration-2 {
-  border: 1px solid #ffdb82;
   width: 294px;
   height: 420px;
+}
+
+#experience-picture-decoration-2 {
+  z-index: -1;
+  border: 1px solid #ffdb82;
+  position: absolute;
   left: 24px;
   top: 64px;
-  z-index: -1;
-  position: absolute;
+  width: 294px;
+  height: 420px;
 }
-.section #experience-picture #myself-002 {
+
+#studies-picture-decoration-1 {
+  z-index: -1;
+  background-color: #ffdb82;
+  position: absolute;
+  left: 80px;
+  top: -48px;
+  width: 294px;
+  height: 320px;
+}
+
+#studies-picture-decoration-2 {
+  z-index: -1;
+  border: 1px solid #ffdb82;
+  position: absolute;
+  left: 24px;
+  top: -24px;
+  width: 294px;
+  height: 320px;
+}
+
+#myself-001 {
+  margin-left: 12px;
+  width: 420px;
+  box-shadow: 0px 2px 8px #0000002d;
+}
+
+#myself-002 {
   width: 312px;
   box-shadow: 0px 2px 8px #0000002d;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.experience-item {
-  justify-self: center;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-}
-.experience-item .experience-item-header {
-  width: 200px;
-  text-align: end;
-}
-.experience-item .experience-item-header .experience-item-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.experience-item .experience-item-header .experience-item-dates {
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.experience-item .experience-item-description {
-  font-weight: 200;
-  font-size: 0.9rem;
-  margin-left: 8px;
-  width: 400px;
-}
-
-.section #studies-picture {
-  margin-right: 20px;
-  position: relative;
-  align-self: center;
-}
-.section #studies-picture #myself-003 {
+#myself-003 {
   width: 320px;
 }
-.section #studies-picture #studies-picture-decoration-1 {
-  background: #ffdb82;
-  width: 294px;
-  height: 320px;
-  left: 80px;
-  top: -48px;
-  z-index: -1;
-  position: absolute;
-}
-.section #studies-picture #studies-picture-decoration-2 {
-  border: 1px solid #ffdb82;
-  width: 294px;
-  height: 320px;
-  left: 24px;
-  top: -24px;
-  z-index: -1;
-  position: absolute;
-}
-.section .studies-item {
-  justify-self: center;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-}
-.section .studies-item .studies-item-description {
-  font-weight: 200;
-  font-size: 0.9rem;
+
+#experience-section .section-item-header {
   text-align: end;
-  margin-right: 8px;
-  width: 400px;
 }
-.section .studies-item .studies-item-header {
-  width: 200px;
+#experience-section .section-item-description {
   text-align: start;
+}
+
+#experience-title {
+  margin-left: 80px;
+}
+
+#studies-section .section-item-header {
+  text-align: start;
+}
+#studies-section .section-item-description {
+  text-align: end;
 }
 
 /*# sourceMappingURL=alicia.css.map */

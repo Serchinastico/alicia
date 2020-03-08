@@ -1,0 +1,44 @@
+$main-text-color: #2d2d2d;
+$color-primary: #ffdb82;
+$color-accent: #3b8fff;
+
+@mixin header1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+@mixin header2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@mixin header3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@mixin body {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+@mixin decoration($type, $color) {
+  z-index: -1;
+
+  @if $type == fill {
+    background-color: $color;
+  } @else if $type == border {
+    border: 1px solid $color;
+  } @else {
+    @error "Unknown decoration type #{$type}.";
+  }
+}
+
+@mixin absolute($left: null, $top: null, $right: null, $bottom: null) {
+  position: absolute;
+
+  left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+}

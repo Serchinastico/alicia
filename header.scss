@@ -1,0 +1,46 @@
+@import "foundation";
+
+#header {
+  margin-top: 160px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  #hello-header {
+    margin-top: 40px;
+
+    #hello-text {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    #iam-text {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 85%;
+
+      #alicia-text {
+        font-weight: 900;
+        font-size: 3.2rem;
+        color: $color-accent;
+      }
+    }
+
+    #surname-text {
+      font-weight: 900;
+      font-size: 3.48rem;
+      color: $color-accent;
+      line-height: 85%;
+      margin-left: -2px;
+    }
+
+    .whatiam-text {
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-align: end;
+      margin-top: 10px;
+      line-height: 60%;
+    }
+  }
+}

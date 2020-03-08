@@ -1,0 +1,58 @@
+@import "foundation";
+
+#decoration-header-1 {
+  @include decoration(fill, $color-primary);
+  @include absolute($top: 0, $right: 0);
+
+  width: 50%;
+  max-width: 575px;
+  height: 490px;
+}
+
+#decoration-header-2 {
+  @include decoration(border, $color-primary);
+  @include absolute($left: 50%, $top: 80px);
+
+  width: 35%;
+  height: 490px;
+}
+
+#decoration-header-3 {
+  @include decoration(border, $color-primary);
+  @include absolute($left: 45%, $top: 140px);
+
+  width: 35%;
+  height: 560px;
+}
+
+#experience-picture-decoration-1 {
+  @include decoration(fill, $color-primary);
+  @include absolute($left: -32px, $top: 32px);
+
+  width: 294px;
+  height: 420px;
+}
+
+#experience-picture-decoration-2 {
+  @include decoration(border, $color-primary);
+  @include absolute($left: 24px, $top: 64px);
+
+  width: 294px;
+  height: 420px;
+}
+
+#studies-picture-decoration-1 {
+  @include decoration(fill, $color-primary);
+  @include absolute($left: 80px, $top: -48px);
+
+  width: 294px;
+  height: 320px;
+}
+
+#studies-picture-decoration-2 {
+  @include decoration(border, $color-primary);
+  @include absolute($left: 24px, $top: -24px);
+
+  width: 294px;
+  height: 320px;
+}
