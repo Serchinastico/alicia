@@ -2,6 +2,9 @@
 
 #toolbar {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   top: 0;
   width: 100%;
   height: 80px;
@@ -14,14 +17,11 @@
   }
 
   #navigationbar {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 32px;
     margin-right: 48px;
 
     .nav-section {
-      font-weight: 600;
-      font-size: 1.1rem;
+      @include navigation-item;
+
       margin-left: 34px;
       margin-right: 34px;
       text-decoration: none;

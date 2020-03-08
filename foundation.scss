@@ -8,23 +8,31 @@ $color-koromiko: #ffc363;
 $color-visvis: #ffed9c;
 
 @mixin header1 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
 }
 
 @mixin header2 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 @mixin header3 {
-  font-size: 0.8rem;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 @mixin header4 {
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+@mixin navigation-item {
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
 @mixin body {
