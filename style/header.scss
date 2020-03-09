@@ -7,8 +7,19 @@
   flex-direction: row;
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 0px;
+  }
+
   #hello-header {
     margin-top: 40px;
+    width: fit-content;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 40px;
+    }
 
     #hello-text {
       font-weight: 600;
@@ -45,6 +56,10 @@
       text-align: end;
       margin-top: 12px;
       line-height: 60%;
+
+      @media (max-width: 1000px) {
+        text-align: center;
+      }
     }
   }
 }

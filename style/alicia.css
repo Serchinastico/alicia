@@ -87,8 +87,21 @@ p {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 1000px) {
+  #header {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 0px;
+  }
+}
 #header #hello-header {
   margin-top: 40px;
+  width: fit-content;
+}
+@media (max-width: 1000px) {
+  #header #hello-header {
+    margin-bottom: 40px;
+  }
 }
 #header #hello-header #hello-text {
   font-weight: 600;
@@ -120,6 +133,11 @@ p {
   text-align: end;
   margin-top: 12px;
   line-height: 60%;
+}
+@media (max-width: 1000px) {
+  #header #hello-header .whatiam-text {
+    text-align: center;
+  }
 }
 
 .section {
