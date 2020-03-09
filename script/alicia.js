@@ -71,3 +71,12 @@ function updateSelectedToolbarItem() {
     $('a[href*="#more"]').addClass("selected");
   }
 }
+
+function onResponsiveMenuClicked() {
+  var sections = $(".nav-section");
+  if (sections.hasClass("responsive")) {
+    sections.removeClass("responsive");
+  } else {
+    sections.addClass("responsive");
+  }
+}
