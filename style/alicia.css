@@ -33,9 +33,20 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
 p {
   padding: 0;
   margin: 0;
+}
+
+.body-bold {
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 #toolbar {
@@ -144,6 +155,10 @@ p {
   margin-right: 8px;
   margin-top: 4px;
   width: 400px;
+}
+
+.job-title {
+  margin-top: 6px;
 }
 
 #decoration-header-1 {

@@ -30,6 +30,11 @@ $color-visvis: #ffed9c;
   font-weight: 200;
 }
 
+@mixin header5 {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
 @mixin navigation-item {
   font-weight: 900;
   font-size: 1.2rem;
@@ -37,6 +42,11 @@ $color-visvis: #ffed9c;
 
 @mixin body {
   font-weight: 200;
+  font-size: 0.9rem;
+}
+
+@mixin body-bold {
+  font-weight: 700;
   font-size: 0.9rem;
 }
 
