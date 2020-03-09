@@ -147,11 +147,23 @@ p {
   width: 100%;
   margin-top: 100px;
 }
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column;
+    width: 90%;
+    margin: 24px auto;
+  }
+}
 .section .picture-area {
   margin-right: 20px;
   margin-left: 20px;
   position: relative;
   align-self: center;
+}
+@media (max-width: 1000px) {
+  .section .picture-area {
+    display: none;
+  }
 }
 .section .section-title {
   text-align: center;
@@ -189,6 +201,11 @@ p {
   max-width: 625px;
   height: 490px;
 }
+@media (max-width: 1000px) {
+  #decoration-header-1 {
+    display: none;
+  }
+}
 
 #decoration-header-2 {
   z-index: -2;
@@ -198,6 +215,11 @@ p {
   top: 80px;
   width: 35%;
   height: 490px;
+}
+@media (max-width: 1000px) {
+  #decoration-header-2 {
+    display: none;
+  }
 }
 
 #decoration-header-3 {
@@ -209,6 +231,11 @@ p {
   width: 35%;
   height: 560px;
 }
+@media (max-width: 1000px) {
+  #decoration-header-3 {
+    display: none;
+  }
+}
 
 #experience-picture-decoration-1 {
   z-index: -1;
@@ -218,6 +245,11 @@ p {
   top: 32px;
   width: 294px;
   height: 420px;
+}
+@media (max-width: 1000px) {
+  #experience-picture-decoration-1 {
+    display: none;
+  }
 }
 
 #experience-picture-decoration-2 {
@@ -229,6 +261,11 @@ p {
   width: 294px;
   height: 420px;
 }
+@media (max-width: 1000px) {
+  #experience-picture-decoration-2 {
+    display: none;
+  }
+}
 
 #studies-picture-decoration-1 {
   z-index: -1;
@@ -238,6 +275,11 @@ p {
   top: -48px;
   width: 294px;
   height: 320px;
+}
+@media (max-width: 1000px) {
+  #studies-picture-decoration-1 {
+    display: none;
+  }
 }
 
 #studies-picture-decoration-2 {
@@ -249,11 +291,21 @@ p {
   width: 294px;
   height: 320px;
 }
+@media (max-width: 1000px) {
+  #studies-picture-decoration-2 {
+    display: none;
+  }
+}
 
 #myself-001 {
   margin-left: 12px;
   width: 420px;
   box-shadow: 0px 2px 8px #0000002d;
+}
+@media (max-width: 1000px) {
+  #myself-001 {
+    width: 80%;
+  }
 }
 
 #myself-002 {
@@ -272,10 +324,22 @@ p {
   margin-top: 100px;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  #more {
+    margin-top: 40px;
+  }
+}
 #more .cards {
   display: flex;
   flex-direction: row;
   margin-top: 32px;
+}
+@media (max-width: 1000px) {
+  #more .cards {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
 }
 #more .cards .card {
   position: relative;
@@ -285,6 +349,11 @@ p {
   height: 340px;
   margin-left: 16px;
   margin-right: 16px;
+}
+@media (max-width: 1000px) {
+  #more .cards .card {
+    margin: 24px 0;
+  }
 }
 #more .cards .card .card-image {
   position: absolute;

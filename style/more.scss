@@ -7,10 +7,20 @@
   margin-top: 100px;
   text-align: center;
 
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+  }
+
   .cards {
     display: flex;
     flex-direction: row;
     margin-top: 32px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      width: 90%;
+      align-items: center;
+    }
 
     .card {
       position: relative;
@@ -20,6 +30,10 @@
       height: 340px;
       margin-left: 16px;
       margin-right: 16px;
+
+      @media (max-width: 1000px) {
+        margin: 24px 0;
+      }
 
       .card-image {
         position: absolute;

@@ -60,6 +60,10 @@ $color-visvis: #ffed9c;
   } @else {
     @error "Unknown decoration type #{$type}.";
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 @mixin absolute($left: null, $top: null, $right: null, $bottom: null) {
