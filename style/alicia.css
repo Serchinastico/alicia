@@ -216,7 +216,7 @@ p {
   margin-top: 24px;
 }
 .section .section-item .section-item-header {
-  width: 200px;
+  width: 500px;
 }
 .section .section-item .section-item-description {
   font-weight: 200;
@@ -284,7 +284,7 @@ p {
   left: -32px;
   top: 32px;
   width: 294px;
-  height: 420px;
+  height: 640px;
 }
 @media (max-width: 1000px) {
   #experience-picture-decoration-1 {
@@ -299,7 +299,7 @@ p {
   left: 24px;
   top: 64px;
   width: 294px;
-  height: 420px;
+  height: 630px;
 }
 @media (max-width: 1000px) {
   #experience-picture-decoration-2 {
@@ -427,6 +427,7 @@ p {
   font-size: 0.9rem;
   margin: 0 16px 16px 16px;
   z-index: 1;
+  font-weight: 400;
 }
 
 #contact {
