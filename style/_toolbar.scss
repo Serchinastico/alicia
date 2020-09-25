@@ -11,7 +11,7 @@
   z-index: 100;
   transition: all 0.3s, visibility 0.3s;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     background: $color-primary;
     justify-content: flex-start;
     align-items: flex-start;
@@ -28,7 +28,7 @@
   #navigationbar {
     margin-right: 48px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
     }
@@ -46,7 +46,7 @@
         text-decoration: underline;
       }
 
-      @media (max-width: 1000px) {
+      @media (max-width: 768px) {
         &.responsive {
           height: 48px;
           display: block;
@@ -62,7 +62,7 @@
 .mobile-menu-icon {
   display: none;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     position: absolute;
     top: 24px;
     right: 24px;

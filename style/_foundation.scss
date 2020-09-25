@@ -61,7 +61,7 @@ $color-visvis: #ffed9c;
     @error "Unknown decoration type #{$type}.";
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
